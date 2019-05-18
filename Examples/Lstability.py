@@ -2,6 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math as m
 
+#Trapz rule is NOT L-stable! (While Backward Euler is L-Stable)
+#Test equation: y'(t)=-2000*(y-cos(t)), y(0)=0
+
 def Fun(t,x):
     return -2000*(x-m.cos(t))
 
